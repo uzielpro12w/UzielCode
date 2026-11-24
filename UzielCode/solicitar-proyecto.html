@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar un proyecto | UzielCode</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .request-hero {
+            text-align: center;
+            padding: 80px 20px 45px;
+        }
+
+        .request-hero h1 {
+            font-size: clamp(2.4rem, 6vw, 3.8rem);
+            margin-bottom: 18px;
+        }
+
+        .request-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .request-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        .request-section {
+            max-width: 1050px;
+            margin: auto;
+            padding: 25px 25px 80px;
+        }
+
+        .request-intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .request-intro h2 {
+            margin-bottom: 12px;
+        }
+
+        .request-intro p {
+            color: #bfdbfe;
+            line-height: 1.8;
+        }
+
+        .request-card {
+            background: linear-gradient(145deg, #123568, #0b2044);
+            border: 1px solid rgba(147,197,253,.2);
+            border-radius: 22px;
+            padding: 35px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 9px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 15px;
+            border-radius: 11px;
+            border: 1px solid rgba(147,197,253,.3);
+            background: #081a37;
+            color: #fff;
+            font-size: 1rem;
+            font-family: inherit;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #38bdf8;
+        }
+
+        .form-group textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .form-group select option {
+            background: #081a37;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background: #38bdf8;
+            color: #06152f;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .submit-button:hover {
+            background: #7dd3fc;
+            transform: translateY(-2px);
+        }
+
+        .form-notice {
+            color: #bfdbfe;
+            font-size: .85rem;
+            line-height: 1.7;
+            margin-top: 18px;
+            text-align: center;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 20px;
+            margin-top: 55px;
+        }
+
+        .step-card {
+            padding: 25px;
+            background: linear-gradient(145deg, #123568, #0b2044);
+            border: 1px solid rgba(147,197,253,.2);
+            border-radius: 18px;
+        }
+
+        .step-number {
+            font-size: 1.7rem;
+            color: #38bdf8;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .step-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .step-card p {
+            color: #dbeafe;
+            line-height: 1.7;
+            font-size: .95rem;
+        }
+
+        .notice-panel {
+            margin-top: 35px;
+            padding: 27px;
+            border-radius: 18px;
+            background: rgba(56,189,248,.07);
+            border: 1px solid rgba(56,189,248,.25);
+        }
+
+        .notice-panel h2 {
+            margin-bottom: 13px;
+        }
+
+        .notice-panel p {
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        @media(max-width:600px) {
+            .request-hero {
+                padding-top: 55px;
+            }
+
+            .request-card {
+                padding: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Uziel<span>Code</span></a>
+
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="descripcion.html">Mi historia</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="request-hero">
+        <h1>Solicita un <span>proyecto</span></h1>
+
+        <p>
+            ¿Tienes una idea que te gustaría convertir en realidad?
+            Cuéntame qué tienes en mente. Cada gran proyecto comienza
+            con una pequeña propuesta.
+        </p>
+    </section>
+
+    <section class="request-section">
+
+        <div class="request-intro">
+            <h2>Cuéntame tu idea 💡</h2>
+            <p>
+                Completa los siguientes campos con información general
+                para explicar qué tipo de proyecto te gustaría realizar.
+            </p>
+        </div>
+
+        <div class="request-card">
+
+            <form id="projectForm">
+
+                <div class="form-group">
+                    <label for="projectName">Nombre o alias</label>
+                    <input
+                        type="text"
+                        id="projectName"
+                        placeholder="¿Cómo te gustaría que te llame?"
+                        maxlength="40"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="projectType">Tipo de proyecto</label>
+                    <select id="projectType" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="Desarrollo web">Desarrollo web</option>
+                        <option value="Diseño gráfico">Diseño gráfico</option>
+                        <option value="Edición de vídeo">Edición de vídeo</option>
+                        <option value="Proyecto personalizado">Proyecto personalizado</option>
+                        <option value="Otra idea">Otra idea</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectDescription">Descripción de tu idea</label>
+                    <textarea
+                        id="projectDescription"
+                        placeholder="Explícame qué te gustaría crear y cómo imaginas el resultado..."
+                        maxlength="1500"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectBudget">Presupuesto aproximado (opcional)</label>
+                    <select id="projectBudget">
+                        <option value="Aún no lo sé">Todavía no lo sé</option>
+                        <option value="Sin presupuesto">Sin presupuesto</option>
+                        <option value="Por definir">Prefiero definirlo después</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Preparar solicitud
+                </button>
+
+                <p class="form-notice">
+                    Este formulario prepara un resumen de tu propuesta.
+                    No envía información automáticamente ni garantiza
+                    la aceptación del proyecto.
+                </p>
+
+            </form>
+
+        </div>
+
+        <div class="steps-grid">
+
+            <article class="step-card">
+                <div class="step-number">01</div>
+                <h3>Presenta tu idea</h3>
+                <p>
+                    Explica qué necesitas y qué resultado te gustaría conseguir.
+                </p>
+            </article>
+
+            <article class="step-card">
+                <div class="step-number">02</div>
+                <h3>Revisión</h3>
+                <p>
+                    La propuesta se revisará para conocer su dificultad
+                    y los recursos necesarios.
+                </p>
+            </article>
+
+            <article class="step-card">
+                <div class="step-number">03</div>
+                <h3>Planificación</h3>
+                <p>
+                    Si es posible realizar el proyecto, se podrán definir
+                    sus características y condiciones.
+                </p>
+            </article>
+
+            <article class="step-card">
+                <div class="step-number">04</div>
+                <h3>Desarrollo</h3>
+                <p>
+                    Una vez acordados los detalles y con la supervisión
+                    correspondiente, podrá comenzar el trabajo.
+                </p>
+            </article>
+
+        </div>
+
+        <section class="notice-panel">
+            <h2>Información importante 💙</h2>
+
+            <p>
+                UzielCode es un proyecto personal en crecimiento.
+                Actualmente estoy desarrollando mis habilidades y
+                adquiriendo experiencia.
+            </p>
+
+            <p>
+                Enviar una solicitud no significa que el proyecto
+                será aceptado. La disponibilidad, el alcance y las
+                condiciones se revisarán previamente.
+            </p>
+
+            <p>
+                Cualquier comunicación, colaboración o acuerdo se
+                realizará con supervisión familiar.
+            </p>
+        </section>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> UzielCode. Creando ideas, aprendiendo y creciendo.</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+    const projectForm = document.getElementById("projectForm");
+
+    // Coloca aquí el número autorizado por tu familia.
+    // Formato internacional: 51 + número, sin espacios ni signos.
+    const numeroWhatsApp = "51943025171";
+
+    projectForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("projectName").value.trim();
+        const type = document.getElementById("projectType").value;
+        const description = document.getElementById("projectDescription").value.trim();
+        const budget = document.getElementById("projectBudget").value;
+
+        if (!name || !type || !description) {
+            alert("Completa los campos obligatorios.");
+            return;
+        }
+
+        if (!/^51\d{9}$/.test(numeroWhatsApp)) {
+            alert("Configura primero el número de WhatsApp autorizado.");
+            return;
+        }
+
+        const mensaje =
+            "Hola, desearía trabajar contigo.\n\n" +
+            "RESUMEN DE SOLICITUD - UZIELCODE\n\n" +
+            "Nombre o alias: " + name + "\n" +
+            "Tipo de proyecto: " + type + "\n" +
+            "Descripción: " + description + "\n" +
+            "Presupuesto: " + budget;
+
+        const enlace =
+            "https://wa.me/" + numeroWhatsApp +
+            "?text=" + encodeURIComponent(mensaje);
+
+        window.open(enlace, "_blank");
+    });
+</script>
+
+</body>
+</html>

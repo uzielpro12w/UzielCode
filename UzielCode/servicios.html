@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce las áreas creativas y tecnológicas de UzielCode.">
+    <title>Servicios | UzielCode</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .services-hero {
+            padding: 110px 7%;
+            text-align: center;
+            background: radial-gradient(ellipse at center, #174b91, transparent 70%);
+        }
+
+        .services-hero h1 {
+            max-width: 950px;
+            margin: 22px auto;
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.2;
+        }
+
+        .services-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .services-hero p {
+            max-width: 780px;
+            margin: auto;
+            color: #dbeafe;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            padding: 25px;
+            margin: auto;
+        }
+
+        .services-intro {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .services-intro h2 {
+            font-size: 35px;
+            margin: 15px 0;
+        }
+
+        .services-intro p {
+            max-width: 850px;
+            margin: 12px auto;
+            color: #dbeafe;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 35px 0;
+        }
+
+        .service-card {
+            padding: 35px;
+            border-radius: 19px;
+            background: linear-gradient(145deg, #123568, #0c2146);
+            border: 1px solid rgba(147,197,253,.2);
+            transition: .35s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+            box-shadow: 0 18px 45px rgba(0,0,0,.2);
+        }
+
+        .service-icon {
+            font-size: 43px;
+            margin-bottom: 20px;
+        }
+
+        .service-number {
+            color: #38bdf8;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .service-card h2 {
+            color: white;
+            font-size: 25px;
+            margin: 13px 0;
+        }
+
+        .service-card p {
+            color: #dbeafe;
+            line-height: 1.9;
+            font-size: 15px;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .service-list li {
+            color: #dbeafe;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(147,197,253,.12);
+            font-size: 14px;
+        }
+
+        .service-tag {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 13px;
+            border-radius: 30px;
+            background: rgba(56,189,248,.1);
+            color: #7dd3fc;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .process-section {
+            margin: 65px 0;
+            padding: 45px;
+            border-radius: 20px;
+            background: rgba(56,189,248,.06);
+            border: 1px solid rgba(56,189,248,.2);
+        }
+
+        .process-section h2 {
+            color: white;
+            font-size: 30px;
+            margin: 15px 0;
+        }
+
+        .process-section > p {
+            color: #dbeafe;
+            line-height: 1.9;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .process-card {
+            padding: 25px;
+            border-radius: 14px;
+            background: #102c59;
+            border: 1px solid rgba(147,197,253,.15);
+        }
+
+        .process-card h3 {
+            color: white;
+            margin: 12px 0;
+        }
+
+        .process-card p {
+            color: #dbeafe;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .commitment {
+            text-align: center;
+            padding: 50px 30px;
+            margin: 55px 0;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #123568, #0c2146);
+            border: 1px solid rgba(56,189,248,.25);
+        }
+
+        .commitment h2 {
+            color: white;
+            font-size: 30px;
+            margin: 15px 0;
+        }
+
+        .commitment p {
+            max-width: 800px;
+            color: #dbeafe;
+            line-height: 1.9;
+            margin: 12px auto;
+        }
+
+        .services-note {
+            margin-top: 20px;
+            color: #93c5fd !important;
+            font-size: 13px;
+        }
+
+        .services-final {
+            padding: 100px 7%;
+            text-align: center;
+            background: radial-gradient(ellipse at center, #174b91, transparent 70%);
+        }
+
+        .services-final h2 {
+            max-width: 850px;
+            margin: 20px auto;
+            font-size: clamp(30px, 5vw, 46px);
+        }
+
+        .services-final p {
+            max-width: 750px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.9;
+        }
+
+        .services-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 750px) {
+            .services-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card,
+            .process-section {
+                padding: 27px 22px;
+            }
+
+            .services-hero {
+                padding: 80px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            Uziel<span>Code</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="descripcion.html">Mi historia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="services-hero">
+            <span class="eyebrow">TECNOLOGÍA · CREATIVIDAD · SOLUCIONES</span>
+
+            <h1>
+                Las ideas merecen convertirse
+                en <span>algo extraordinario.</span>
+            </h1>
+
+            <p>
+                En UzielCode quiero combinar tecnología y creatividad
+                para desarrollar soluciones digitales, diseños
+                y proyectos que transmitan ideas.
+            </p>
+        </section>
+
+        <div class="services-container">
+
+            <section class="services-intro">
+                <span class="eyebrow">MIS ÁREAS DE TRABAJO</span>
+
+                <h2>¿En qué quiero especializarme?</h2>
+
+                <p>
+                    Me interesa explorar diferentes áreas del mundo digital.
+                    Cada una representa una oportunidad para aprender,
+                    experimentar y desarrollar nuevas habilidades.
+                </p>
+
+                <p>
+                    Estas son las áreas en las que estoy desarrollando
+                    mis conocimientos y que quiero seguir mejorando
+                    con cada nuevo proyecto.
+                </p>
+            </section>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-icon">🌐</div>
+
+                    <span class="service-number">ÁREA 01</span>
+
+                    <h2>Desarrollo web</h2>
+
+                    <p>
+                        Creación de sitios web con una presentación
+                        moderna, organización clara y diseños adaptables
+                        a diferentes dispositivos.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>✓ Páginas personales y portafolios.</li>
+                        <li>✓ Sitios web informativos.</li>
+                        <li>✓ Interfaces digitales.</li>
+                        <li>✓ Diseño adaptable a móviles.</li>
+                    </ul>
+
+                    <span class="service-tag">DESARROLLO DIGITAL</span>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🎨</div>
+
+                    <span class="service-number">ÁREA 02</span>
+
+                    <h2>Diseño gráfico</h2>
+
+                    <p>
+                        Creación de elementos visuales para comunicar
+                        ideas, construir identidades y mejorar
+                        la presentación de contenido digital.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>✓ Miniaturas para videos.</li>
+                        <li>✓ Banners y diseños digitales.</li>
+                        <li>✓ Elementos gráficos.</li>
+                        <li>✓ Composiciones visuales.</li>
+                    </ul>
+
+                    <span class="service-tag">DISEÑO CREATIVO</span>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🎬</div>
+
+                    <span class="service-number">ÁREA 03</span>
+
+                    <h2>Edición audiovisual</h2>
+
+                    <p>
+                        Edición de contenido audiovisual mediante
+                        herramientas digitales, buscando transmitir
+                        ideas de forma dinámica y entretenida.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>✓ Edición de videos.</li>
+                        <li>✓ Contenido para redes sociales.</li>
+                        <li>✓ Videos horizontales y verticales.</li>
+                        <li>✓ Montaje y organización audiovisual.</li>
+                    </ul>
+
+                    <span class="service-tag">CREACIÓN DE CONTENIDO</span>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">💡</div>
+
+                    <span class="service-number">ÁREA 04</span>
+
+                    <h2>Ideas y proyectos digitales</h2>
+
+                    <p>
+                        Exploración de ideas tecnológicas y creativas
+                        para desarrollar nuevas herramientas,
+                        experiencias y productos digitales.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>✓ Conceptos de aplicaciones.</li>
+                        <li>✓ Proyectos interactivos.</li>
+                        <li>✓ Experimentos tecnológicos.</li>
+                        <li>✓ Ideas para videojuegos.</li>
+                    </ul>
+
+                    <span class="service-tag">INNOVACIÓN</span>
+                </article>
+
+            </div>
+
+            <section class="process-section">
+
+                <span class="eyebrow">MI METODOLOGÍA</span>
+
+                <h2>¿Cómo quiero desarrollar cada proyecto?</h2>
+
+                <p>
+                    Cada proyecto necesita organización.
+                    Quiero seguir un proceso que me ayude a comprender
+                    las necesidades, planificar el trabajo y mejorar
+                    el resultado final.
+                </p>
+
+                <div class="process-grid">
+
+                    <article class="process-card">
+                        <div class="service-icon">💬</div>
+                        <h3>01. Escuchar la idea</h3>
+                        <p>
+                            Comprender qué se quiere conseguir,
+                            cuáles son las necesidades y qué resultado
+                            se espera.
+                        </p>
+                    </article>
+
+                    <article class="process-card">
+                        <div class="service-icon">📝</div>
+                        <h3>02. Planificar</h3>
+                        <p>
+                            Organizar las ideas, definir el alcance
+                            y pensar cómo se puede desarrollar
+                            el proyecto.
+                        </p>
+                    </article>
+
+                    <article class="process-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>03. Desarrollar</h3>
+                        <p>
+                            Trabajar en la propuesta, construir
+                            los elementos necesarios y revisar
+                            el avance.
+                        </p>
+                    </article>
+
+                    <article class="process-card">
+                        <div class="service-icon">✨</div>
+                        <h3>04. Revisar y mejorar</h3>
+                        <p>
+                            Comprobar el resultado, corregir errores
+                            y buscar oportunidades para mejorar.
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="commitment">
+
+                <div class="service-icon">🤝</div>
+
+                <span class="eyebrow">MI COMPROMISO</span>
+
+                <h2>Aprender, cumplir y mejorar</h2>
+
+                <p>
+                    Quiero desarrollar cada proyecto con responsabilidad,
+                    honestidad y atención a los detalles. Prefiero
+                    comunicar claramente lo que puedo hacer antes
+                    que prometer resultados que no puedo garantizar.
+                </p>
+
+                <p>
+                    Estoy construyendo mis habilidades paso a paso.
+                    Cada experiencia será una oportunidad para aprender
+                    y mejorar mi forma de trabajar.
+                </p>
+
+                <p class="services-note">
+                    UzielCode es una marca personal en desarrollo.
+                    Cualquier colaboración o proyecto se coordinará
+                    con la supervisión de mi familia.
+                </p>
+
+            </section>
+
+        </div>
+
+        <section class="services-final">
+
+            <span class="eyebrow">¿TIENES UNA IDEA?</span>
+
+            <h2>
+                Todo gran proyecto comienza
+                con una buena conversación.
+            </h2>
+
+            <p>
+                Si tienes una idea digital que te gustaría explorar,
+                podemos conocerla y evaluar qué posibilidades existen
+                para desarrollarla.
+            </p>
+
+            <div class="services-buttons">
+
+                <a href="index.html" class="btn secondary">
+                    ← Volver al inicio
+                </a>
+
+                <a href="solicitar-proyecto.html" class="btn primary">
+                    Conocer el contacto →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            Uziel<span>Code</span>
+        </a>
+
+        <p>Aprendiendo, creando y construyendo el futuro.</p>
+
+        <p>
+            © <span id="year"></span> UzielCode.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mis metas a corto, mediano y largo plazo. El camino que quiero construir con UzielCode.">
+    <title>Mis metas | UzielCode</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .meta-hero {
+            padding: 110px 7%;
+            text-align: center;
+            background: radial-gradient(ellipse at center, #174b91, transparent 70%);
+        }
+
+        .meta-hero h1 {
+            max-width: 950px;
+            margin: 22px auto;
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.2;
+        }
+
+        .meta-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .meta-hero p {
+            max-width: 780px;
+            margin: auto;
+            color: #dbeafe;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .meta-container {
+            max-width: 1150px;
+            padding: 25px;
+            margin: auto;
+        }
+
+        .meta-intro {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .meta-intro h2 {
+            font-size: 35px;
+            margin: 15px 0;
+        }
+
+        .meta-intro p {
+            max-width: 850px;
+            margin: 12px auto;
+            color: #dbeafe;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        .meta-card {
+            background: linear-gradient(145deg, #123568, #0c2146);
+            border: 1px solid rgba(147,197,253,.22);
+            padding: 38px;
+            border-radius: 19px;
+            margin: 25px 0;
+            transition: .35s;
+        }
+
+        .meta-card:hover {
+            transform: translateY(-6px);
+            border-color: #38bdf8;
+            box-shadow: 0 18px 45px rgba(0,0,0,.2);
+        }
+
+        .meta-label {
+            color: #38bdf8;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .meta-icon {
+            font-size: 40px;
+            margin: 15px 0;
+        }
+
+        .meta-card h2 {
+            color: white;
+            font-size: 28px;
+            margin: 12px 0;
+        }
+
+        .meta-card p {
+            color: #dbeafe;
+            line-height: 1.9;
+            margin: 13px 0;
+        }
+
+        .meta-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 22px;
+        }
+
+        .meta-list li {
+            padding: 12px 15px;
+            margin: 9px 0;
+            background: rgba(56,189,248,.07);
+            border-left: 3px solid #38bdf8;
+            border-radius: 5px;
+            color: #e0f2fe;
+            line-height: 1.6;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .meta-small {
+            background: #102c59;
+            padding: 28px;
+            border: 1px solid rgba(147,197,253,.2);
+            border-radius: 16px;
+        }
+
+        .meta-small h3 {
+            color: white;
+            font-size: 21px;
+            margin: 12px 0;
+        }
+
+        .meta-small p {
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        .meta-quote {
+            text-align: center;
+            margin: 55px 0;
+            padding: 55px 25px;
+            background: rgba(56,189,248,.08);
+            border: 1px solid rgba(56,189,248,.2);
+            border-radius: 18px;
+        }
+
+        .meta-quote h2 {
+            color: white;
+            font-size: clamp(25px, 4vw, 34px);
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.5;
+        }
+
+        .meta-quote p {
+            color: #7dd3fc;
+            margin-top: 20px;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .meta-money {
+            background: linear-gradient(135deg, #123568, #102c59);
+            border: 1px solid rgba(56,189,248,.3);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 35px 0;
+            text-align: center;
+        }
+
+        .meta-money h2 {
+            color: white;
+            font-size: 30px;
+            margin: 15px 0;
+        }
+
+        .money-number {
+            color: #38bdf8;
+            font-size: clamp(35px, 6vw, 55px);
+            font-weight: 900;
+            margin: 20px 0;
+        }
+
+        .meta-money p {
+            max-width: 750px;
+            color: #dbeafe;
+            line-height: 1.9;
+            margin: 12px auto;
+        }
+
+        .meta-note {
+            font-size: 13px;
+            color: #93c5fd !important;
+        }
+
+        .meta-final {
+            padding: 100px 7%;
+            text-align: center;
+            background: radial-gradient(ellipse at center, #174b91, transparent 70%);
+        }
+
+        .meta-final h2 {
+            max-width: 850px;
+            margin: 20px auto;
+            font-size: clamp(30px, 5vw, 46px);
+        }
+
+        .meta-final p {
+            max-width: 750px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.9;
+        }
+
+        .meta-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 650px) {
+            .meta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .meta-card {
+                padding: 27px 22px;
+            }
+
+            .meta-hero {
+                padding: 80px 6%;
+            }
+
+            .meta-money {
+                padding: 28px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            Uziel<span>Code</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="descripcion.html">Mi historia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="meta-hero">
+            <span class="eyebrow">MIS METAS · MI PLAN · MI FUTURO</span>
+
+            <h1>
+                Los sueños necesitan un plan.
+                <span>Estas son mis metas.</span>
+            </h1>
+
+            <p>
+                No quiero dejar mi futuro únicamente en manos del tiempo.
+                Quiero organizar mis ideas, establecer objetivos y avanzar
+                poco a poco hacia todo lo que deseo construir.
+            </p>
+        </section>
+
+        <div class="meta-container">
+
+            <section class="meta-intro">
+                <span class="eyebrow">UNA DIRECCIÓN CLARA</span>
+
+                <h2>¿Por qué organizo mis metas?</h2>
+
+                <p>
+                    Tener sueños es importante, pero también necesito
+                    saber qué puedo hacer para acercarme a ellos.
+                    Por eso quiero dividir mis metas en diferentes etapas.
+                </p>
+
+                <p>
+                    Algunas cosas puedo empezar a trabajarlas desde ahora.
+                    Otras necesitan más preparación, experiencia y tiempo.
+                    No espero conseguirlo todo inmediatamente.
+                    Quiero construir una base sólida.
+                </p>
+            </section>
+
+            <section class="meta-card">
+                <span class="meta-label">01 · CORTO PLAZO</span>
+                <div class="meta-icon">📚</div>
+
+                <h2>Preparar mis conocimientos y habilidades</h2>
+
+                <p>
+                    Mi primera prioridad es aprender. Quiero aprovechar
+                    esta etapa para desarrollar conocimientos que me
+                    permitan crear proyectos cada vez mejores.
+                </p>
+
+                <ul class="meta-list">
+                    <li>Aprender y practicar HTML, CSS y JavaScript.</li>
+                    <li>Mejorar mi lógica de programación.</li>
+                    <li>Aprender a desarrollar páginas web completas.</li>
+                    <li>Mejorar mis habilidades de diseño y edición.</li>
+                    <li>Organizar y terminar mi portafolio UzielCode.</li>
+                    <li>Continuar estudiando y fortalecer mis conocimientos.</li>
+                </ul>
+            </section>
+
+            <section class="meta-card">
+                <span class="meta-label">02 · MEDIANO PLAZO</span>
+                <div class="meta-icon">🚀</div>
+
+                <h2>Convertir mis conocimientos en proyectos</h2>
+
+                <p>
+                    Después de construir una buena base, quiero empezar
+                    a desarrollar proyectos propios y demostrar lo que
+                    puedo crear con todo lo aprendido.
+                </p>
+
+                <ul class="meta-list">
+                    <li>Crear páginas web más completas y profesionales.</li>
+                    <li>Construir proyectos que pueda presentar en mi portafolio.</li>
+                    <li>Aprender nuevas tecnologías y herramientas.</li>
+                    <li>Mejorar la identidad y presencia digital de UzielCode.</li>
+                    <li>Adquirir experiencia mediante proyectos pequeños.</li>
+                    <li>Aprender a organizar trabajos y cumplir compromisos.</li>
+                </ul>
+            </section>
+
+            <section class="meta-card">
+                <span class="meta-label">03 · LARGO PLAZO</span>
+                <div class="meta-icon">🏢</div>
+
+                <h2>Construir mi futuro como emprendedor tecnológico</h2>
+
+                <p>
+                    A largo plazo quiero que todo lo que estoy aprendiendo
+                    se convierta en algo mucho más grande. Me gustaría
+                    desarrollar una empresa tecnológica propia.
+                </p>
+
+                <ul class="meta-list">
+                    <li>Consolidar UzielCode como una marca tecnológica.</li>
+                    <li>Crear una empresa tecnológica alrededor de los 18 años, si estoy preparado.</li>
+                    <li>Desarrollar aplicaciones, videojuegos y productos digitales.</li>
+                    <li>Aprender a trabajar con equipos y colaboradores.</li>
+                    <li>Construir soluciones que puedan ayudar a otras personas.</li>
+                    <li>Conseguir estabilidad y tener la posibilidad de apoyar a mi familia.</li>
+                </ul>
+            </section>
+
+            <section class="meta-quote">
+                <h2>
+                    "No necesito conseguirlo todo hoy.
+                    Necesito aprender algo nuevo y avanzar un paso cada día."
+                </h2>
+
+                <p>UZIELCODE · CONSTANCIA Y APRENDIZAJE</p>
+            </section>
+
+            <section class="meta-intro">
+                <span class="eyebrow">MIS PRIORIDADES</span>
+
+                <h2>Otras metas que también quiero alcanzar</h2>
+
+                <p>
+                    Mi crecimiento no depende de una sola cosa.
+                    También quiero mejorar en diferentes áreas de mi vida.
+                </p>
+            </section>
+
+            <div class="meta-grid">
+
+                <article class="meta-small">
+                    <div class="meta-icon">💻</div>
+                    <h3>Mi computadora</h3>
+                    <p>
+                        Conseguir una PC que me permita programar,
+                        estudiar, editar videos y desarrollar videojuegos
+                        con mejores herramientas.
+                    </p>
+                </article>
+
+                <article class="meta-small">
+                    <div class="meta-icon">👨‍👩‍👦</div>
+                    <h3>Mi familia</h3>
+                    <p>
+                        Prepararme para poder contribuir al bienestar
+                        de mis padres y construir mejores oportunidades
+                        para mi familia.
+                    </p>
+                </article>
+
+                <article class="meta-small">
+                    <div class="meta-icon">🎮</div>
+                    <h3>Mis videojuegos</h3>
+                    <p>
+                        Aprender a desarrollar videojuegos originales,
+                        diseñar experiencias y convertir mis ideas
+                        en proyectos jugables.
+                    </p>
+                </article>
+
+                <article class="meta-small">
+                    <div class="meta-icon">🧠</div>
+                    <h3>Mi crecimiento personal</h3>
+                    <p>
+                        Ser más organizado, responsable, constante
+                        y capaz de aprender de mis errores.
+                    </p>
+                </article>
+
+            </div>
+
+            <section class="meta-money">
+                <span class="meta-label">UNA META MATERIAL IMPORTANTE</span>
+
+                <div class="meta-icon">🖥️</div>
+
+                <h2>Construir mi fondo para una PC gamer</h2>
+
+                <p>
+                    Una de mis metas es conseguir una computadora
+                    que me permita avanzar en programación,
+                    desarrollo de videojuegos, edición y creación digital.
+                </p>
+
+                <div class="money-number">$4,000 – $5,000</div>
+
+                <p>
+                    Mi objetivo mínimo es reunir aproximadamente
+                    4,000 dólares, mientras que mi objetivo ideal
+                    es alcanzar los 5,000 dólares.
+                </p>
+
+                <p class="meta-note">
+                    Esta es una meta futura de ahorro, no dinero
+                    que ya haya conseguido. Quiero avanzar de forma
+                    responsable y registrar únicamente los aportes reales.
+                </p>
+
+                <div class="meta-buttons">
+                    <a href="ahorro-pc.html" class="btn primary">
+                        Ver mi plan de ahorro →
+                    </a>
+                </div>
+            </section>
+
+            <section class="meta-intro">
+                <span class="eyebrow">MI CAMINO</span>
+
+                <h2>Las etapas que quiero seguir</h2>
+
+                <p>
+                    No existe un único camino para alcanzar mis metas.
+                    Pero quiero avanzar con una planificación que
+                    me permita aprender, practicar y mejorar.
+                </p>
+            </section>
+
+            <div class="meta-grid">
+
+                <article class="meta-small">
+                    <div class="meta-icon">📖</div>
+                    <h3>Etapa 1: aprender</h3>
+                    <p>
+                        Estudiar, investigar, practicar y construir
+                        una base sólida de conocimientos.
+                    </p>
+                </article>
+
+                <article class="meta-small">
+                    <div class="meta-icon">🛠️</div>
+                    <h3>Etapa 2: experimentar</h3>
+                    <p>
+                        Probar ideas, equivocarme, corregir y descubrir
+                        nuevas formas de crear.
+                    </p>
+                </article>
+
+                <article class="meta-small">
+                    <div class="meta-icon">🌐</div>
+                    <h3>Etapa 3: desarrollar</h3>
+                    <p>
+                        Crear proyectos propios, mejorar mi portafolio
+                        y desarrollar mi marca.
+                    </p>
+                </article>
+
+                <article class="meta-small">
+                    <div class="meta-icon">🏆</div>
+                    <h3>Etapa 4: crecer</h3>
+                    <p>
+                        Ampliar mis conocimientos, asumir nuevos desafíos
+                        y prepararme para emprender.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+        <section class="meta-final">
+            <span class="eyebrow">MI FUTURO COMIENZA CON MIS DECISIONES</span>
+
+            <h2>
+                Cada meta tiene un camino.
+                Y cada camino comienza con un primer paso.
+            </h2>
+
+            <p>
+                Todavía tengo mucho por aprender y muchas cosas
+                por descubrir. No sé exactamente cómo será el futuro,
+                pero sí sé que quiero prepararme para construirlo.
+                Quiero seguir creando, mejorando y convirtiendo
+                mis ideas en proyectos reales.
+            </p>
+
+            <div class="meta-buttons">
+                <a href="index.html" class="btn primary">
+                    ← Volver al inicio
+                </a>
+
+                <a href="proyectos.html" class="btn secondary">
+                    Conocer mis proyectos →
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="logo">
+            Uziel<span>Code</span>
+        </a>
+
+        <p>Aprendiendo, creando y construyendo el futuro.</p>
+
+        <p>
+            © <span id="year"></span> UzielCode.
+            Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

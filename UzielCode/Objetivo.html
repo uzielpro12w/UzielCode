@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce los objetivos personales, tecnológicos y empresariales de UzielCode.">
+    <title>Mis objetivos | UzielCode</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .objective-hero {
+            padding: 110px 7%;
+            text-align: center;
+            background:
+                radial-gradient(ellipse at center, #174b91, transparent 70%);
+        }
+
+        .objective-hero h1 {
+            max-width: 950px;
+            margin: 22px auto;
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.2;
+        }
+
+        .objective-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .objective-hero p {
+            max-width: 780px;
+            margin: auto;
+            color: #dbeafe;
+            font-size: 18px;
+        }
+
+        .objective-container {
+            max-width: 1150px;
+            padding: 25px;
+            margin: auto;
+        }
+
+        .objective-intro {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .objective-intro h2 {
+            font-size: 35px;
+            margin: 15px 0;
+        }
+
+        .objective-intro p {
+            max-width: 850px;
+            margin: auto;
+            color: #dbeafe;
+            font-size: 17px;
+        }
+
+        .objective-card {
+            background: linear-gradient(145deg, #123568, #0c2146);
+            border: 1px solid rgba(147,197,253,.22);
+            padding: 38px;
+            border-radius: 19px;
+            margin: 25px 0;
+            transition: .35s;
+        }
+
+        .objective-card:hover {
+            transform: translateY(-6px);
+            border-color: #38bdf8;
+            box-shadow: 0 18px 45px rgba(0,0,0,.2);
+        }
+
+        .objective-icon {
+            font-size: 38px;
+        }
+
+        .objective-card h2 {
+            font-size: 27px;
+            margin: 13px 0;
+            color: white;
+        }
+
+        .objective-card p {
+            color: #dbeafe;
+            line-height: 2;
+            margin: 14px 0;
+        }
+
+        .objective-label {
+            color: #38bdf8;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .objective-quote {
+            text-align: center;
+            margin: 50px 0;
+            padding: 45px 25px;
+            background: rgba(56,189,248,.08);
+            border: 1px solid rgba(56,189,248,.2);
+            border-radius: 18px;
+        }
+
+        .objective-quote h2 {
+            color: white;
+            font-size: 28px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .objective-quote p {
+            color: #7dd3fc;
+            margin-top: 18px;
+        }
+
+        .objective-steps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 35px 0;
+        }
+
+        .step-card {
+            padding: 28px;
+            background: #102c59;
+            border: 1px solid rgba(147,197,253,.2);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .step-card h3 {
+            color: white;
+            margin: 12px 0;
+        }
+
+        .step-card p {
+            color: #dbeafe;
+            font-size: 14px;
+        }
+
+        .objective-end {
+            text-align: center;
+            padding: 100px 7%;
+            background: radial-gradient(ellipse at center, #174b91, transparent 70%);
+        }
+
+        .objective-end h2 {
+            max-width: 850px;
+            margin: 20px auto;
+            font-size: clamp(30px, 5vw, 46px);
+        }
+
+        .objective-end p {
+            max-width: 750px;
+            margin: auto;
+            color: #dbeafe;
+        }
+
+        .objective-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 650px) {
+            .objective-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .objective-card {
+                padding: 27px 22px;
+            }
+
+            .objective-card h2 {
+                font-size: 23px;
+            }
+
+            .objective-hero {
+                padding: 80px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            Uziel<span>Code</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="descripcion.html">Mi historia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section class="objective-hero">
+            <span class="eyebrow">MI DIRECCIÓN · MIS PROPÓSITOS · MI FUTURO</span>
+
+            <h1>
+                No quiero solamente soñar.
+                Quiero <span>construir mis objetivos.</span>
+            </h1>
+
+            <p>
+                Cada objetivo representa una dirección.
+                Cada aprendizaje representa una oportunidad.
+                Y cada paso que doy me acerca un poco más
+                a la persona que quiero llegar a ser.
+            </p>
+        </section>
+
+
+        <div class="objective-container">
+
+            <!-- INTRODUCCIÓN -->
+            <section class="objective-intro">
+                <span class="eyebrow">MI PROPÓSITO</span>
+
+                <h2>¿Qué quiero conseguir?</h2>
+
+                <p>
+                    Mi principal objetivo es prepararme para construir
+                    un futuro relacionado con la tecnología, el desarrollo
+                    de software y el emprendimiento. Quiero adquirir
+                    conocimientos, desarrollar proyectos propios
+                    y convertir mis ideas en soluciones útiles.
+                </p>
+
+                <p>
+                    También quiero que mis logros tengan un significado
+                    más allá de lo personal: deseo tener la posibilidad
+                    de ayudar a mi familia y generar oportunidades
+                    para otras personas.
+                </p>
+            </section>
+
+
+            <!-- OBJETIVO 1 -->
+            <section class="objective-card">
+                <span class="objective-label">OBJETIVO 01</span>
+                <div class="objective-icon">👨‍👩‍👦</div>
+
+                <h2>Ayudar a mi familia y construir mejores oportunidades</h2>
+
+                <p>
+                    Uno de mis motivos más importantes es mi familia.
+                    Quiero prepararme para que, en el futuro, pueda
+                    contribuir a su bienestar y ayudar a mis padres.
+                </p>
+
+                <p>
+                    Sé que las dificultades económicas no desaparecen
+                    de un día para otro y que todavía tengo mucho
+                    por aprender. Por eso quiero desarrollar habilidades
+                    que puedan convertirse en oportunidades reales.
+                </p>
+
+                <p>
+                    Mi intención es crecer de manera responsable,
+                    sin dejar de lado mis estudios ni apresurar
+                    procesos que requieren tiempo.
+                </p>
+            </section>
+
+
+            <!-- OBJETIVO 2 -->
+            <section class="objective-card">
+                <span class="objective-label">OBJETIVO 02</span>
+                <div class="objective-icon">💻</div>
+
+                <h2>Convertirme en un desarrollador tecnológico</h2>
+
+                <p>
+                    Quiero aprender a programar y comprender cómo
+                    se construyen los productos digitales que utilizamos
+                    todos los días.
+                </p>
+
+                <p>
+                    Me interesa el desarrollo web, la creación
+                    de aplicaciones, los videojuegos y el desarrollo
+                    de software.
+                </p>
+
+                <p>
+                    Mi meta es desarrollar una buena base de conocimientos
+                    en programación, lógica, diseño y resolución
+                    de problemas.
+                </p>
+
+                <p>
+                    Quiero llegar a crear proyectos completos,
+                    funcionales y bien organizados, no solamente
+                    seguir instrucciones sin comprenderlas.
+                </p>
+            </section>
+
+
+            <!-- OBJETIVO 3 -->
+            <section class="objective-card">
+                <span class="objective-label">OBJETIVO 03</span>
+                <div class="objective-icon">🚀</div>
+
+                <h2>Construir y desarrollar UzielCode</h2>
+
+                <p>
+                    Quiero que UzielCode crezca como una marca
+                    tecnológica con identidad propia.
+                </p>
+
+                <p>
+                    Mi objetivo es utilizar este proyecto para presentar
+                    mis trabajos, compartir mis conocimientos,
+                    aprender a comunicarme con clientes y mejorar
+                    mis habilidades profesionales.
+                </p>
+
+                <p>
+                    También quiero desarrollar una presencia digital
+                    organizada, con proyectos reales y una imagen
+                    que transmita confianza y responsabilidad.
+                </p>
+
+                <p>
+                    Cada nueva página, cada mejora y cada proyecto
+                    será una oportunidad para hacer crecer esta idea.
+                </p>
+            </section>
+
+
+            <!-- OBJETIVO 4 -->
+            <section class="objective-card">
+                <span class="objective-label">OBJETIVO 04</span>
+                <div class="objective-icon">🏢</div>
+
+                <h2>Crear mi propia empresa tecnológica a los 18 años</h2>
+
+                <p>
+                    Uno de mis sueños más grandes es llegar a crear
+                    mi propia empresa tecnológica cuando tenga
+                    los conocimientos y la preparación necesarios.
+                </p>
+
+                <p>
+                    Me imagino trabajando en el desarrollo de páginas,
+                    aplicaciones, sistemas y productos digitales.
+                </p>
+
+                <p>
+                    Quiero aprender cómo funciona una empresa,
+                    cómo se organizan los equipos, cómo se administran
+                    los recursos y cómo se construyen relaciones
+                    responsables con los clientes.
+                </p>
+
+                <p>
+                    No quiero limitarme a imaginar una empresa.
+                    Quiero prepararme desde ahora para entender
+                    todo lo que implica construir y mantener una.
+                </p>
+            </section>
+
+
+            <!-- OBJETIVO 5 -->
+            <section class="objective-card">
+                <span class="objective-label">OBJETIVO 05</span>
+                <div class="objective-icon">🎮</div>
+
+                <h2>Crear videojuegos y productos digitales</h2>
+
+                <p>
+                    Otra de mis grandes motivaciones es la posibilidad
+                    de crear videojuegos, aplicaciones y herramientas
+                    que otras personas puedan disfrutar o utilizar.
+                </p>
+
+                <p>
+                    Me gustaría desarrollar experiencias originales,
+                    experimentar con diferentes tecnologías
+                    y aprender a trabajar en proyectos cada vez
+                    más completos.
+                </p>
+
+                <p>
+                    Quiero que mis ideas no se queden únicamente
+                    en mi imaginación. Quiero aprender a convertirlas
+                    en productos reales.
+                </p>
+            </section>
+
+
+            <!-- OBJETIVO 6 -->
+            <section class="objective-card">
+                <span class="objective-label">OBJETIVO 06</span>
+                <div class="objective-icon">📚</div>
+
+                <h2>Aprender sobre economía, negocios y emprendimiento</h2>
+
+                <p>
+                    Entiendo que la tecnología y la programación
+                    no son suficientes para construir una empresa.
+                    También necesito aprender a administrar recursos,
+                    organizar proyectos y tomar decisiones.
+                </p>
+
+                <p>
+                    Quiero conocer más sobre economía, administración,
+                    planificación, educación financiera y emprendimiento.
+                </p>
+
+                <p>
+                    Me interesa comprender cómo funcionan los negocios,
+                    cómo se crean oportunidades y cómo las ideas
+                    pueden convertirse en proyectos sostenibles.
+                </p>
+            </section>
+
+
+            <!-- OBJETIVO 7 -->
+            <section class="objective-card">
+                <span class="objective-label">OBJETIVO 07</span>
+                <div class="objective-icon">🖥️</div>
+
+                <h2>Conseguir las herramientas necesarias para crecer</h2>
+
+                <p>
+                    Quiero conseguir una computadora que me permita
+                    estudiar, programar, desarrollar videojuegos,
+                    editar videos y trabajar en proyectos tecnológicos.
+                </p>
+
+                <p>
+                    Para mí, adquirir mejores herramientas significa
+                    tener nuevas posibilidades de aprendizaje
+                    y experimentación.
+                </p>
+
+                <p>
+                    También quiero aprender a administrar mi dinero
+                    y organizar mis objetivos económicos con paciencia.
+                </p>
+            </section>
+
+
+            <!-- OBJETIVO 8 -->
+            <section class="objective-card">
+                <span class="objective-label">OBJETIVO 08</span>
+                <div class="objective-icon">🧠</div>
+
+                <h2>Desarrollar mi crecimiento personal</h2>
+
+                <p>
+                    Quiero convertirme en una persona más organizada,
+                    responsable, paciente y perseverante.
+                </p>
+
+                <p>
+                    Sé que los conocimientos técnicos son importantes,
+                    pero también lo son la comunicación, la capacidad
+                    de trabajar con otras personas y la responsabilidad
+                    de cumplir los compromisos.
+                </p>
+
+                <p>
+                    Mi objetivo es aprender a aceptar los errores,
+                    escuchar consejos, reconocer mis límites
+                    y mejorar constantemente.
+                </p>
+            </section>
+
+
+            <!-- FRASE -->
+            <section class="objective-quote">
+                <h2>
+                    "No quiero que mis sueños dependan solamente
+                    de la suerte. Quiero prepararme para tener
+                    la oportunidad de alcanzarlos."
+                </h2>
+
+                <p>UZIELCODE · MI CAMINO HACIA EL FUTURO</p>
+            </section>
+
+
+            <!-- PLAN -->
+            <section class="objective-intro">
+                <span class="eyebrow">MI PLAN DE CRECIMIENTO</span>
+
+                <h2>¿Cómo pienso avanzar?</h2>
+
+                <p>
+                    Mis objetivos necesitan organización.
+                    Por eso quiero dividir mi camino en etapas,
+                    aprender de manera progresiva y construir
+                    una base que me permita afrontar desafíos mayores.
+                </p>
+            </section>
+
+
+            <div class="objective-steps">
+
+                <article class="step-card">
+                    <div class="objective-icon">📖</div>
+                    <h3>Primera etapa: aprender</h3>
+                    <p>
+                        Estudiar, practicar programación, mejorar
+                        mis conocimientos y descubrir nuevas herramientas.
+                    </p>
+                </article>
+
+                <article class="step-card">
+                    <div class="objective-icon">🛠️</div>
+                    <h3>Segunda etapa: crear</h3>
+                    <p>
+                        Desarrollar proyectos propios, experimentar
+                        y construir un portafolio con trabajos reales.
+                    </p>
+                </article>
+
+                <article class="step-card">
+                    <div class="objective-icon">🌐</div>
+                    <h3>Tercera etapa: crecer</h3>
+                    <p>
+                        Mejorar UzielCode, aprender a trabajar
+                        con clientes y desarrollar nuevas oportunidades.
+                    </p>
+                </article>
+
+                <article class="step-card">
+                    <div class="objective-icon">🏢</div>
+                    <h3>Cuarta etapa: emprender</h3>
+                    <p>
+                        Prepararme para construir una empresa
+                        tecnológica y desarrollar productos propios.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL -->
+        <section class="objective-end">
+
+            <span class="eyebrow">EL FUTURO SE CONSTRUYE PASO A PASO</span>
+
+            <h2>
+                Mis objetivos no terminan aquí.
+                Este es solamente el comienzo.
+            </h2>
+
+            <p>
+                Todavía tengo mucho que aprender, muchas experiencias
+                por vivir y numerosos desafíos por superar.
+                Pero quiero seguir avanzando y convertir cada
+                aprendizaje en una nueva oportunidad.
+            </p>
+
+            <div class="objective-buttons">
+                <a href="index.html" class="btn primary">
+                    ← Volver al inicio
+                </a>
+
+                <a href="meta.html" class="btn secondary">
+                    Conocer mis metas →
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <a href="index.html" class="logo">
+            Uziel<span>Code</span>
+        </a>
+
+        <p>Aprendiendo, creando y construyendo el futuro.</p>
+
+        <p>
+            © <span id="year"></span> UzielCode.
+            Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

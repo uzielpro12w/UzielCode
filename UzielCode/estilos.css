@@ -1,0 +1,366 @@
+
+:root {
+    --blue: #38bdf8;
+    --blue-light: #bae6fd;
+    --background: #06152f;
+    --background-two: #0b2450;
+    --card: #102c59;
+    --white: #ffffff;
+    --text: #dbeafe;
+    --border: rgba(147,197,253,.22);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    background:
+        radial-gradient(ellipse at 50% 0%, #174b91 0%, transparent 48%),
+        linear-gradient(145deg, var(--background), var(--background-two));
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    background: rgba(4, 17, 40, .88);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 900;
+    color: white;
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.nav a {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.nav a:hover {
+    color: var(--blue);
+}
+
+.nav .nav-button {
+    background: var(--blue);
+    color: #06152f;
+    padding: 10px 18px;
+    border-radius: 9px;
+}
+
+.hero {
+    min-height: 730px;
+    padding: 100px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 950px;
+    margin: auto;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    max-width: 900px;
+    margin: 25px auto;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero-content > p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--text);
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 11px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.primary {
+    color: #06152f;
+    background: var(--blue);
+    box-shadow: 0 8px 30px rgba(56,189,248,.25);
+}
+
+.primary:hover {
+    background: #7dd3fc;
+}
+
+.secondary {
+    color: white;
+    background: rgba(255,255,255,.08);
+    border: 1px solid var(--border);
+}
+
+.hero-note {
+    margin-top: 25px;
+    color: #93c5fd;
+    font-size: 14px;
+}
+
+.hero-decoration {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.code-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 28px;
+    background: #030d20;
+    border: 1px solid #2563eb;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 20px 65px rgba(0,0,0,.35);
+    transition: .4s;
+}
+
+.code-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 25px 70px rgba(56,189,248,.15);
+}
+
+.code-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 6px;
+    background: var(--blue);
+    border-radius: 50%;
+}
+
+.code-card pre {
+    margin-top: 22px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    line-height: 2;
+    color: #bae6fd;
+}
+
+.section,
+.welcome {
+    padding: 100px 7%;
+    text-align: center;
+}
+
+.welcome {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.welcome h2,
+.section-heading h2 {
+    margin: 18px 0;
+    font-size: clamp(30px, 4vw, 46px);
+    color: white;
+}
+
+.welcome p,
+.section-heading p {
+    max-width: 850px;
+    margin: auto;
+    color: var(--text);
+    font-size: 17px;
+}
+
+.explore {
+    background: rgba(2, 12, 31, .35);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.cards-grid {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.card {
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(145deg, #123568, #0c2146);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    min-height: 260px;
+    transition: .35s;
+}
+
+.card:hover {
+    transform: translateY(-9px);
+    border-color: var(--blue);
+    box-shadow: 0 20px 45px rgba(0,0,0,.25);
+}
+
+.card-icon {
+    font-size: 39px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--text);
+    font-size: 15px;
+    min-height: 70px;
+}
+
+.card a {
+    color: var(--blue);
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.card a:hover {
+    color: white;
+}
+
+.final-cta {
+    padding: 110px 7%;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at center, #174b91, transparent 70%);
+}
+
+.final-cta h2 {
+    font-size: clamp(30px, 4vw, 45px);
+    margin: 20px 0;
+}
+
+.final-cta p {
+    color: var(--text);
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.footer {
+    padding: 55px 7%;
+    text-align: center;
+    background: #030d20;
+    border-top: 1px solid var(--border);
+}
+
+.footer p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 75px 6%;
+    }
+
+    .section,
+    .welcome {
+        padding: 70px 6%;
+    }
+
+    .hero-content > p {
+        font-size: 16px;
+    }
+
+    .nav {
+        gap: 13px;
+    }
+}
