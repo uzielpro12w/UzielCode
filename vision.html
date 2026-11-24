@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi visión | UzielCode</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .vision-hero {
+            min-height: 440px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .vision-label {
+            color: #38bdf8;
+            letter-spacing: 4px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
+
+        .vision-hero h1 {
+            font-size: clamp(40px, 7vw, 68px);
+            max-width: 900px;
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .vision-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .vision-hero p {
+            max-width: 750px;
+            line-height: 1.9;
+            color: #dbeafe;
+            font-size: 17px;
+        }
+
+        .vision-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .vision-section {
+            margin-bottom: 65px;
+        }
+
+        .vision-section h2 {
+            color: #38bdf8;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .vision-section p {
+            color: #dbeafe;
+            line-height: 1.9;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+            margin-top: 28px;
+        }
+
+        .vision-card {
+            background: rgba(16, 44, 89, 0.85);
+            border: 1px solid rgba(147, 197, 253, 0.22);
+            border-radius: 18px;
+            padding: 28px;
+            transition: 0.3s;
+        }
+
+        .vision-card:hover {
+            transform: translateY(-6px);
+            border-color: #38bdf8;
+        }
+
+        .vision-card .icon {
+            font-size: 36px;
+            margin-bottom: 17px;
+        }
+
+        .vision-card h3 {
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .vision-card p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #dbeafe;
+        }
+
+        .vision-quote {
+            margin: 65px 0;
+            padding: 45px 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #102c59, #0b2450);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 22px;
+        }
+
+        .vision-quote h2 {
+            font-size: clamp(24px, 4vw, 36px);
+            line-height: 1.5;
+            color: white;
+            margin-bottom: 18px;
+        }
+
+        .vision-quote span {
+            color: #38bdf8;
+        }
+
+        .vision-quote p {
+            color: #bae6fd;
+        }
+
+        .vision-final {
+            text-align: center;
+            padding: 50px 20px 90px;
+        }
+
+        .vision-final h2 {
+            font-size: 34px;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .vision-final p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.9;
+            color: #dbeafe;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Uziel<span>Code</span></a>
+
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="descripcion.html">Mi historia</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="vision-hero">
+
+        <div class="vision-label">MI VISIÓN · MI FUTURO</div>
+
+        <h1>
+            No quiero solamente crear proyectos.
+            <span>Quiero construir algo grande.</span>
+        </h1>
+
+        <p>
+            Mi visión es convertir UzielCode en mucho más que una marca
+            personal. Quiero construir una empresa tecnológica,
+            desarrollar ideas propias y demostrar que los grandes sueños
+            también pueden comenzar desde cero.
+        </p>
+
+    </section>
+
+    <div class="vision-container">
+
+        <section class="vision-section">
+
+            <h2>01. El futuro que imagino</h2>
+
+            <p>
+                Cuando pienso en mi futuro, no imagino únicamente tener
+                un buen trabajo o aprender a utilizar diferentes programas.
+                Imagino crear algo que tenga mi propia identidad, que
+                represente mis ideas y que pueda crecer con el paso del tiempo.
+            </p>
+
+            <p>
+                Quiero que UzielCode llegue a convertirse en una empresa
+                tecnológica capaz de desarrollar páginas web, videojuegos,
+                aplicaciones, herramientas digitales y proyectos que
+                puedan aportar algo positivo a las personas.
+            </p>
+
+            <p>
+                Sé que todavía estoy aprendiendo. Me falta mucho por
+                descubrir, practicar y mejorar. Pero precisamente por eso
+                quiero comenzar ahora: porque cada pequeño avance puede
+                convertirse en una parte importante de mi futuro.
+            </p>
+
+        </section>
+
+        <section class="vision-section">
+
+            <h2>02. Lo que quiero construir</h2>
+
+            <p>
+                Mi objetivo no es quedarme con una sola habilidad.
+                Quiero explorar diferentes áreas de la tecnología,
+                experimentar con nuevas ideas y desarrollar proyectos
+                cada vez más completos.
+            </p>
+
+            <div class="vision-grid">
+
+                <article class="vision-card">
+                    <div class="icon">💻</div>
+                    <h3>Desarrollo tecnológico</h3>
+                    <p>
+                        Crear páginas web, aplicaciones y herramientas
+                        digitales que puedan resolver problemas y ofrecer
+                        experiencias útiles.
+                    </p>
+                </article>
+
+                <article class="vision-card">
+                    <div class="icon">🎮</div>
+                    <h3>Videojuegos</h3>
+                    <p>
+                        Desarrollar videojuegos originales, construir
+                        mundos, diseñar sistemas y convertir ideas
+                        creativas en experiencias interactivas.
+                    </p>
+                </article>
+
+                <article class="vision-card">
+                    <div class="icon">🏢</div>
+                    <h3>Una empresa propia</h3>
+                    <p>
+                        Transformar UzielCode en una empresa tecnológica
+                        con identidad, organización, proyectos y un
+                        equipo que comparta la misma pasión por crear.
+                    </p>
+                </article>
+
+                <article class="vision-card">
+                    <div class="icon">🌎</div>
+                    <h3>Alcance internacional</h3>
+                    <p>
+                        Trabajar para que mis proyectos puedan llegar
+                        a personas de diferentes lugares y demostrar
+                        que las ideas pueden superar fronteras.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="vision-section">
+
+            <h2>03. Mi familia también forma parte de este sueño</h2>
+
+            <p>
+                Una de las razones más importantes por las que quiero
+                superarme es mi familia. Detrás de mis metas también
+                existe el deseo de darles mejores oportunidades a mis
+                padres y agradecerles por todo lo que hacen por mí.
+            </p>
+
+            <p>
+                Quiero que, cuando mire hacia atrás, pueda recordar
+                que todo comenzó con una idea, una computadora,
+                muchas ganas de aprender y el apoyo de las personas
+                que estuvieron conmigo desde el principio.
+            </p>
+
+            <p>
+                No quiero medir mi futuro solamente por el dinero,
+                los reconocimientos o el tamaño de una empresa.
+                También quiero medirlo por lo que consiga construir,
+                por las personas a las que pueda ayudar y por la
+                tranquilidad que pueda aportar a mi familia.
+            </p>
+
+        </section>
+
+        <section class="vision-section">
+
+            <h2>04. La empresa que quiero llegar a crear</h2>
+
+            <p>
+                Me imagino que, alrededor de los 18 años y cuando
+                tenga la preparación y las condiciones necesarias,
+                pueda dar un paso importante: comenzar a convertir
+                UzielCode en una empresa tecnológica.
+            </p>
+
+            <p>
+                Quiero que tenga una identidad reconocible, una
+                organización profesional, objetivos claros y un
+                equipo de personas creativas que quieran desarrollar
+                proyectos interesantes.
+            </p>
+
+            <p>
+                No espero que todo suceda de un día para otro.
+                Una empresa no se construye solamente con un nombre
+                y un logotipo. Se construye con conocimientos,
+                responsabilidad, experiencia, planificación,
+                trabajo y decisiones inteligentes.
+            </p>
+
+            <p>
+                Por eso quiero prepararme desde ahora, aprender
+                cómo funciona el mundo tecnológico y desarrollar
+                proyectos que me permitan ganar experiencia.
+            </p>
+
+        </section>
+
+        <section class="vision-section">
+
+            <h2>05. El camino hacia esa visión</h2>
+
+            <p>
+                Sé que el camino puede ser largo. Habrá cosas que
+                no salgan como esperaba, proyectos que tenga que
+                modificar y conocimientos que me costará aprender.
+                Pero quiero tomar cada dificultad como una
+                oportunidad para mejorar.
+            </p>
+
+            <div class="vision-grid">
+
+                <article class="vision-card">
+                    <div class="icon">📚</div>
+                    <h3>Aprender</h3>
+                    <p>
+                        Fortalecer mis conocimientos en programación,
+                        diseño, tecnología, comunicación y desarrollo
+                        de proyectos.
+                    </p>
+                </article>
+
+                <article class="vision-card">
+                    <div class="icon">🛠️</div>
+                    <h3>Experimentar</h3>
+                    <p>
+                        Crear proyectos, cometer errores, corregirlos
+                        y descubrir nuevas formas de desarrollar
+                        mis ideas.
+                    </p>
+                </article>
+
+                <article class="vision-card">
+                    <div class="icon">🚀</div>
+                    <h3>Crecer</h3>
+                    <p>
+                        Mejorar mis habilidades, construir una
+                        identidad y convertir mis ideas en proyectos
+                        cada vez más completos.
+                    </p>
+                </article>
+
+                <article class="vision-card">
+                    <div class="icon">🏆</div>
+                    <h3>Construir</h3>
+                    <p>
+                        Trabajar para que UzielCode pueda convertirse
+                        en una empresa tecnológica con un propósito
+                        y un futuro propio.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <div class="vision-quote">
+
+            <h2>
+                "No importa que hoy esté comenzando desde cero.
+                Lo importante es que estoy
+                <span>construyendo el futuro que imagino.</span>"
+            </h2>
+
+            <p>Mi mentalidad, mi esfuerzo y mi visión.</p>
+
+        </div>
+
+        <section class="vision-final">
+
+            <h2>Esto apenas comienza.</h2>
+
+            <p>
+                UzielCode representa una parte de lo que quiero llegar
+                a ser. No es el resultado final, sino el comienzo de
+                un camino que quiero recorrer con paciencia,
+                creatividad y determinación.
+
+                <br><br>
+
+                Todavía tengo mucho por aprender y muchos proyectos
+                por desarrollar. Pero tengo algo claro: quiero seguir
+                creciendo, crear cosas propias y trabajar para que
+                algún día esta pequeña iniciativa se convierta en
+                algo mucho más grande.
+
+                <br><br>
+
+                <strong>Esta es mi visión. Y este es solamente el comienzo, gracias por leer todo........
+                    PROXIMAMENTE MAS
+                </strong>
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> UzielCode. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

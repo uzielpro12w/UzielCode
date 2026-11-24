@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los proyectos tecnológicos y creativos de UzielCode.">
+    <title>Mis proyectos | UzielCode</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .projects-hero {
+            padding: 110px 7%;
+            text-align: center;
+            background: radial-gradient(ellipse at center, #174b91, transparent 70%);
+        }
+
+        .projects-hero h1 {
+            max-width: 950px;
+            margin: 22px auto;
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.2;
+        }
+
+        .projects-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .projects-hero p {
+            max-width: 780px;
+            margin: auto;
+            color: #dbeafe;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            padding: 25px;
+            margin: auto;
+        }
+
+        .projects-intro {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .projects-intro h2 {
+            font-size: 35px;
+            margin: 15px 0;
+        }
+
+        .projects-intro p {
+            max-width: 850px;
+            margin: 12px auto;
+            color: #dbeafe;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        .project-feature {
+            padding: 45px;
+            margin: 35px 0;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #153d78, #0c2146);
+            border: 1px solid rgba(56,189,248,.35);
+            transition: .35s;
+        }
+
+        .project-feature:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 20px 50px rgba(0,0,0,.2);
+        }
+
+        .project-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .project-category {
+            color: #38bdf8;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .project-status {
+            padding: 9px 15px;
+            border-radius: 30px;
+            background: rgba(56,189,248,.12);
+            color: #7dd3fc;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .project-feature h2 {
+            color: white;
+            font-size: clamp(30px, 4vw, 43px);
+            margin: 25px 0 15px;
+        }
+
+        .project-feature h2 span {
+            color: #38bdf8;
+        }
+
+        .project-feature p {
+            color: #dbeafe;
+            line-height: 1.9;
+            margin: 15px 0;
+        }
+
+        .project-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .detail-box {
+            background: rgba(4,20,48,.35);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(147,197,253,.15);
+        }
+
+        .detail-box h3 {
+            color: #38bdf8;
+            font-size: 14px;
+            margin-bottom: 9px;
+        }
+
+        .detail-box p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin: 35px 0;
+        }
+
+        .project-card {
+            padding: 32px;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #123568, #0c2146);
+            border: 1px solid rgba(147,197,253,.2);
+            transition: .35s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+            box-shadow: 0 18px 40px rgba(0,0,0,.2);
+        }
+
+        .project-icon {
+            font-size: 43px;
+            margin-bottom: 18px;
+        }
+
+        .project-card h3 {
+            color: white;
+            font-size: 23px;
+            margin-bottom: 13px;
+        }
+
+        .project-card p {
+            color: #dbeafe;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .project-tag {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 8px 12px;
+            border-radius: 30px;
+            background: rgba(56,189,248,.1);
+            color: #7dd3fc;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .future-section {
+            margin: 70px 0;
+            padding: 45px;
+            border-radius: 20px;
+            background: rgba(56,189,248,.06);
+            border: 1px solid rgba(56,189,248,.2);
+        }
+
+        .future-section h2 {
+            color: white;
+            font-size: 30px;
+            margin: 15px 0;
+        }
+
+        .future-section p {
+            color: #dbeafe;
+            line-height: 1.9;
+        }
+
+        .future-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 25px;
+        }
+
+        .future-list li {
+            padding: 14px;
+            margin: 10px 0;
+            background: rgba(56,189,248,.07);
+            border-left: 3px solid #38bdf8;
+            border-radius: 5px;
+            color: #dbeafe;
+        }
+
+        .project-quote {
+            text-align: center;
+            padding: 55px 25px;
+            margin: 55px 0;
+            border-radius: 18px;
+            background: rgba(56,189,248,.08);
+            border: 1px solid rgba(56,189,248,.2);
+        }
+
+        .project-quote h2 {
+            color: white;
+            max-width: 850px;
+            margin: auto;
+            font-size: clamp(24px, 4vw, 34px);
+            line-height: 1.5;
+        }
+
+        .project-quote p {
+            color: #7dd3fc;
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .projects-final {
+            text-align: center;
+            padding: 100px 7%;
+            background: radial-gradient(ellipse at center, #174b91, transparent 70%);
+        }
+
+        .projects-final h2 {
+            max-width: 850px;
+            margin: 20px auto;
+            font-size: clamp(30px, 5vw, 46px);
+        }
+
+        .projects-final p {
+            max-width: 750px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.9;
+        }
+
+        .project-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 750px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-details {
+                grid-template-columns: 1fr;
+            }
+
+            .project-feature,
+            .future-section {
+                padding: 28px 22px;
+            }
+
+            .projects-hero {
+                padding: 80px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            Uziel<span>Code</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="descripcion.html">Mi historia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="projects-hero">
+            <span class="eyebrow">IDEAS · CREATIVIDAD · TECNOLOGÍA</span>
+
+            <h1>
+                No solamente tengo ideas.
+                Quiero <span>convertirlas en proyectos.</span>
+            </h1>
+
+            <p>
+                Este es el espacio donde quiero mostrar lo que estoy
+                construyendo, lo que estoy aprendiendo y las ideas
+                que deseo desarrollar en el futuro.
+            </p>
+        </section>
+
+        <div class="projects-container">
+
+            <section class="projects-intro">
+                <span class="eyebrow">MI ESPACIO CREATIVO</span>
+
+                <h2>Bienvenido a mis proyectos</h2>
+
+                <p>
+                    Creo que cada proyecto representa una oportunidad
+                    para aprender algo nuevo. No importa si comienza
+                    con una idea pequeña o con un desafío complicado:
+                    lo importante es tener la iniciativa de construirlo.
+                </p>
+
+                <p>
+                    Aquí quiero reunir mis creaciones tecnológicas
+                    y creativas. Algunas están en desarrollo y otras
+                    representan áreas en las que quiero seguir creciendo.
+                </p>
+            </section>
+
+            <section class="project-feature">
+
+                <div class="project-top">
+                    <span class="project-category">
+                        PROYECTO PRINCIPAL · MARCA PERSONAL
+                    </span>
+
+                    <span class="project-status">
+                        EN DESARROLLO
+                    </span>
+                </div>
+
+                <h2>Uziel<span>Code</span></h2>
+
+                <p>
+                    UzielCode es mi proyecto personal relacionado
+                    con la tecnología, el desarrollo digital y la creatividad.
+                    Nace de mi interés por aprender programación,
+                    construir soluciones y desarrollar una identidad propia.
+                </p>
+
+                <p>
+                    Quiero que este espacio evolucione conmigo.
+                    Mi intención es utilizarlo para presentar mis proyectos,
+                    mostrar mis habilidades, compartir mi crecimiento
+                    y construir poco a poco una presencia tecnológica.
+                </p>
+
+                <div class="project-details">
+
+                    <div class="detail-box">
+                        <h3>PROPÓSITO</h3>
+                        <p>
+                            Aprender, crear y desarrollar una marca
+                            tecnológica propia.
+                        </p>
+                    </div>
+
+                    <div class="detail-box">
+                        <h3>ÁREA</h3>
+                        <p>
+                            Tecnología, desarrollo web y creatividad digital.
+                        </p>
+                    </div>
+
+                    <div class="detail-box">
+                        <h3>ESTADO</h3>
+                        <p>
+                            Construcción y mejora continua.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="projects-intro">
+                <span class="eyebrow">MIS ÁREAS DE CREACIÓN</span>
+
+                <h2>¿Qué quiero desarrollar?</h2>
+
+                <p>
+                    Tengo diferentes intereses dentro del mundo digital.
+                    Estas son las áreas en las que quiero crear,
+                    practicar y desarrollar nuevas habilidades.
+                </p>
+            </section>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-icon">🌐</div>
+
+                    <h3>Desarrollo web</h3>
+
+                    <p>
+                        Quiero construir páginas web modernas,
+                        atractivas y funcionales. Me interesa aprender
+                        cómo combinar diseño, programación y experiencia
+                        de usuario para crear sitios digitales.
+                    </p>
+
+                    <span class="project-tag">ÁREA DE APRENDIZAJE</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🎨</div>
+
+                    <h3>Diseño digital</h3>
+
+                    <p>
+                        Me interesa crear diseños visuales,
+                        miniaturas, interfaces y elementos gráficos
+                        que comuniquen ideas de una manera clara
+                        y atractiva.
+                    </p>
+
+                    <span class="project-tag">ÁREA CREATIVA</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🎬</div>
+
+                    <h3>Edición audiovisual</h3>
+
+                    <p>
+                        Quiero mejorar en la edición de videos,
+                        aprender técnicas de montaje y crear contenido
+                        audiovisual con una identidad propia.
+                    </p>
+
+                    <span class="project-tag">ÁREA AUDIOVISUAL</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🎮</div>
+
+                    <h3>Desarrollo de videojuegos</h3>
+
+                    <p>
+                        Me gustaría crear videojuegos originales,
+                        diseñar mecánicas, construir mundos
+                        y aprender a desarrollar experiencias
+                        interactivas para otras personas.
+                    </p>
+
+                    <span class="project-tag">PROYECTOS FUTUROS</span>
+                </article>
+
+            </div>
+
+            <section class="future-section">
+
+                <span class="eyebrow">LO QUE VIENE DESPUÉS</span>
+
+                <h2>Mis próximos proyectos</h2>
+
+                <p>
+                    Este portafolio no es un punto final.
+                    Quiero seguir agregando proyectos a medida
+                    que aprenda nuevas tecnologías y desarrolle
+                    nuevas ideas.
+                </p>
+
+                <ul class="future-list">
+                    <li>✓ Mejorar y ampliar el sitio web de UzielCode.</li>
+                    <li>→ Crear nuevas páginas web desde cero.</li>
+                    <li>→ Desarrollar aplicaciones y herramientas digitales.</li>
+                    <li>→ Crear videojuegos originales.</li>
+                    <li>→ Experimentar con nuevas tecnologías.</li>
+                    <li>→ Construir productos digitales propios.</li>
+                </ul>
+
+                <p>
+                    Cada nuevo proyecto tendrá su propio espacio
+                    cuando esté suficientemente desarrollado
+                    para poder presentarlo.
+                </p>
+
+            </section>
+
+            <section class="project-quote">
+                <h2>
+                    "Una idea puede parecer pequeña al principio,
+                    pero puede convertirse en algo extraordinario
+                    cuando decides trabajar en ella."
+                </h2>
+
+                <p>UZIELCODE · IDEAS QUE SE CONVIERTEN EN PROYECTOS</p>
+            </section>
+
+            <section class="projects-intro">
+                <span class="eyebrow">MI FORMA DE TRABAJAR</span>
+
+                <h2>Crear también significa aprender</h2>
+
+                <p>
+                    No espero que todos mis proyectos sean perfectos
+                    desde el primer intento. Quiero aprender a resolver
+                    problemas, escuchar recomendaciones y corregir
+                    aquello que pueda mejorar.
+                </p>
+
+                <p>
+                    Para mí, un proyecto no solamente es el resultado final.
+                    También es todo el conocimiento que adquiero
+                    mientras lo construyo.
+                </p>
+            </section>
+
+        </div>
+
+        <section class="projects-final">
+
+            <span class="eyebrow">EL SIGUIENTE PROYECTO PUEDE SER MEJOR</span>
+
+            <h2>
+                Todavía tengo muchas ideas por construir.
+                Y esto recién comienza.
+            </h2>
+
+            <p>
+                Quiero seguir aprendiendo, experimentando y creando.
+                Este espacio crecerá con cada nueva experiencia
+                y con cada proyecto que logre desarrollar.
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="index.html" class="btn primary">
+                    ← Volver al inicio
+                </a>
+
+                <a href="servicios.html" class="btn secondary">
+                    Conocer mis servicios →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            Uziel<span>Code</span>
+        </a>
+
+        <p>Aprendiendo, creando y construyendo el futuro.</p>
+
+        <p>
+            © <span id="year"></span> UzielCode.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

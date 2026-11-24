@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos | UzielCode</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .discount-hero {
+            text-align: center;
+            padding: 85px 20px 45px;
+        }
+
+        .discount-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 18px;
+        }
+
+        .discount-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .discount-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        .discount-section {
+            max-width: 1150px;
+            margin: auto;
+            padding: 30px 25px 80px;
+        }
+
+        .discount-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .discount-card {
+            background: linear-gradient(145deg, #123568, #0b2044);
+            border: 1px solid rgba(147,197,253,.2);
+            border-radius: 20px;
+            padding: 28px;
+            transition: .3s;
+        }
+
+        .discount-card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+        }
+
+        .discount-icon {
+            font-size: 2.7rem;
+            margin-bottom: 18px;
+        }
+
+        .discount-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .discount-card p {
+            color: #dbeafe;
+            line-height: 1.7;
+        }
+
+        .discount-tag {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 13px;
+            border-radius: 30px;
+            background: rgba(56,189,248,.13);
+            color: #7dd3fc;
+            font-size: .85rem;
+        }
+
+        .special-panel {
+            margin-top: 55px;
+            padding: 38px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #123568, #0b2044);
+            border: 1px solid rgba(56,189,248,.3);
+            text-align: center;
+        }
+
+        .special-panel h2 {
+            margin-bottom: 15px;
+        }
+
+        .special-panel p {
+            color: #dbeafe;
+            line-height: 1.8;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .conditions {
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(56,189,248,.07);
+            border: 1px solid rgba(56,189,248,.2);
+        }
+
+        .conditions h2 {
+            margin-bottom: 18px;
+        }
+
+        .conditions ul {
+            padding-left: 22px;
+            color: #dbeafe;
+            line-height: 2;
+        }
+
+        .closing {
+            text-align: center;
+            margin-top: 50px;
+            color: #bfdbfe;
+            line-height: 1.8;
+        }
+
+        @media(max-width:600px) {
+            .discount-hero {
+                padding-top: 60px;
+            }
+
+            .special-panel,
+            .conditions {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Uziel<span>Code</span></a>
+
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="descripcion.html">Mi historia</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="discount-hero">
+        <h1>Promociones y <span>descuentos</span></h1>
+
+        <p>
+            En UzielCode creemos que cada oportunidad puede convertirse
+            en una nueva experiencia. Por eso, queremos explorar
+            promociones especiales para diferentes momentos del año.
+        </p>
+    </section>
+
+    <section class="discount-section">
+
+        <div class="discount-grid">
+
+            <article class="discount-card">
+                <div class="discount-icon">🎄</div>
+                <h3>Especial de Navidad</h3>
+                <p>
+                    Una posible campaña de temporada para celebrar
+                    las fiestas con oportunidades especiales en
+                    determinados servicios.
+                </p>
+                <span class="discount-tag">Promoción futura</span>
+            </article>
+
+            <article class="discount-card">
+                <div class="discount-icon">🎆</div>
+                <h3>Año Nuevo</h3>
+                <p>
+                    Una oportunidad para comenzar el año con nuevas
+                    ideas, proyectos digitales y posibles beneficios
+                    especiales.
+                </p>
+                <span class="discount-tag">Promoción futura</span>
+            </article>
+
+            <article class="discount-card">
+                <div class="discount-icon">🎂</div>
+                <h3>Fechas especiales</h3>
+                <p>
+                    En determinadas ocasiones podrían existir
+                    promociones relacionadas con celebraciones
+                    y acontecimientos especiales.
+                </p>
+                <span class="discount-tag">Según disponibilidad</span>
+            </article>
+
+            <article class="discount-card">
+                <div class="discount-icon">✨</div>
+                <h3>Oportunidades especiales</h3>
+                <p>
+                    Algunas iniciativas podrían ofrecer condiciones
+                    diferentes para proyectos pequeños o colaboraciones
+                    seleccionadas.
+                </p>
+                <span class="discount-tag">Por definir</span>
+            </article>
+
+        </div>
+
+        <section class="special-panel">
+            <h2>Una nueva oportunidad para crear 🚀</h2>
+
+            <p>
+                Las promociones de UzielCode tienen como objetivo
+                facilitar nuevas experiencias y permitir que más
+                ideas puedan convertirse en proyectos digitales.
+                Cada campaña se anunciará únicamente cuando esté
+                disponible y haya sido organizada.
+            </p>
+        </section>
+
+        <section class="conditions">
+            <h2>Información importante</h2>
+
+            <ul>
+                <li>Las promociones no están disponibles permanentemente.</li>
+                <li>Los descuentos y sus condiciones se anunciarán antes de cada campaña.</li>
+                <li>La disponibilidad dependerá del tipo de proyecto y del tiempo necesario.</li>
+                <li>No se garantizará un descuento hasta que haya sido confirmado.</li>
+                <li>Cualquier colaboración o acuerdo se coordinará con supervisión familiar.</li>
+            </ul>
+        </section>
+
+        <div class="closing">
+            <h2>Las mejores ideas merecen una oportunidad.</h2>
+
+            <p>
+                UzielCode sigue creciendo, aprendiendo y preparando
+                nuevas formas de transformar ideas en experiencias digitales.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> UzielCode. Creando ideas, aprendiendo y creciendo.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas | UzielCode</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .tools-hero {
+            text-align: center;
+            padding: 85px 20px 45px;
+        }
+
+        .tools-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 18px;
+        }
+
+        .tools-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .tools-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        .tools-section {
+            max-width: 1150px;
+            margin: auto;
+            padding: 35px 25px 75px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-heading h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #bfdbfe;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .tool-card {
+            background: linear-gradient(145deg, #123568, #0b2044);
+            border: 1px solid rgba(147,197,253,.2);
+            border-radius: 20px;
+            padding: 28px;
+            transition: .3s;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+        }
+
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 18px;
+        }
+
+        .tool-card h3 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        .tool-card p {
+            color: #dbeafe;
+            line-height: 1.7;
+            font-size: .95rem;
+        }
+
+        .tool-tag {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 7px 12px;
+            border-radius: 30px;
+            background: rgba(56,189,248,.13);
+            color: #7dd3fc;
+            font-size: .8rem;
+        }
+
+        .learning-box {
+            margin-top: 65px;
+            padding: 35px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #123568, #0b2044);
+            border: 1px solid rgba(56,189,248,.3);
+            text-align: center;
+        }
+
+        .learning-box h2 {
+            margin-bottom: 15px;
+        }
+
+        .learning-box p {
+            color: #dbeafe;
+            line-height: 1.8;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .learning-box strong {
+            color: #38bdf8;
+        }
+
+        @media(max-width:600px) {
+            .tools-hero {
+                padding-top: 60px;
+            }
+
+            .learning-box {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Uziel<span>Code</span></a>
+
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="descripcion.html">Mi historia</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="tools-hero">
+        <h1>Mis <span>herramientas</span></h1>
+
+        <p>
+            Detrás de cada idea existe una herramienta que ayuda a convertirla
+            en realidad. Estos son algunos de los programas y lenguajes que
+            utilizo y estoy aprendiendo para desarrollar mis habilidades.
+        </p>
+    </section>
+
+    <section class="tools-section">
+
+        <div class="section-heading">
+            <h2>Programas que utilizo</h2>
+            <p>Mi espacio de creación, diseño y desarrollo.</p>
+        </div>
+
+        <div class="tools-grid">
+
+            <article class="tool-card">
+                <div class="tool-icon">💻</div>
+                <h3>Visual Studio Code</h3>
+                <p>
+                    Mi entorno de trabajo para escribir código, organizar
+                    archivos y desarrollar páginas web.
+                </p>
+                <span class="tool-tag">Desarrollo web</span>
+            </article>
+
+            <article class="tool-card">
+                <div class="tool-icon">🎨</div>
+                <h3>Canva</h3>
+                <p>
+                    Una herramienta que utilizo para crear diseños gráficos,
+                    miniaturas y elementos visuales.
+                </p>
+                <span class="tool-tag">Diseño gráfico</span>
+            </article>
+
+            <article class="tool-card">
+                <div class="tool-icon">🎬</div>
+                <h3>CapCut PC</h3>
+                <p>
+                    Mi herramienta de edición audiovisual para trabajar
+                    con vídeos, efectos, transiciones y sonido.
+                </p>
+                <span class="tool-tag">Edición de vídeo</span>
+            </article>
+
+            <article class="tool-card">
+                <div class="tool-icon">🎮</div>
+                <h3>Roblox Studio</h3>
+                <p>
+                    El programa que utilizo para explorar el desarrollo
+                    de videojuegos y crear experiencias interactivas.
+                </p>
+                <span class="tool-tag">Desarrollo de videojuegos</span>
+            </article>
+
+        </div>
+
+        <div class="section-heading" style="margin-top:75px;">
+            <h2>Tecnologías que estoy aprendiendo</h2>
+            <p>Conocimientos que quiero seguir desarrollando.</p>
+        </div>
+
+        <div class="tools-grid">
+
+            <article class="tool-card">
+                <div class="tool-icon">🌐</div>
+                <h3>HTML</h3>
+                <p>
+                    Es la base que permite organizar el contenido
+                    de una página web: títulos, textos, imágenes y secciones.
+                </p>
+                <span class="tool-tag">Estructura web</span>
+            </article>
+
+            <article class="tool-card">
+                <div class="tool-icon">🎨</div>
+                <h3>CSS</h3>
+                <p>
+                    Permite dar estilo a las páginas web mediante colores,
+                    diseños, animaciones, espacios y efectos visuales.
+                </p>
+                <span class="tool-tag">Diseño web</span>
+            </article>
+
+            <article class="tool-card">
+                <div class="tool-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>
+                    Es un lenguaje que permite añadir interactividad,
+                    funciones y comportamientos dinámicos a las páginas.
+                </p>
+                <span class="tool-tag">Programación web</span>
+            </article>
+
+        </div>
+
+        <div class="learning-box">
+            <h2>Siempre hay algo nuevo que aprender 🚀</h2>
+
+            <p>
+                No considero que aprender sea solamente conocer un programa.
+                También significa experimentar, equivocarse, investigar y
+                mejorar con cada proyecto. Mi objetivo es seguir ampliando
+                mis conocimientos y descubrir nuevas formas de crear
+                tecnología con <strong>UzielCode</strong>.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> UzielCode. Creando ideas, aprendiendo y creciendo.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

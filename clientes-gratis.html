@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeros cinco proyectos | UzielCode</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .free-hero {
+            text-align: center;
+            padding: 85px 20px 50px;
+        }
+
+        .free-hero h1 {
+            font-size: clamp(2.4rem, 6vw, 3.8rem);
+            margin-bottom: 18px;
+        }
+
+        .free-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .free-hero p {
+            max-width: 760px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.9;
+        }
+
+        .free-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px 25px 80px;
+        }
+
+        .main-panel {
+            padding: 38px;
+            border-radius: 23px;
+            background: linear-gradient(135deg, #123568, #0b2044);
+            border: 1px solid rgba(56,189,248,.3);
+            text-align: center;
+        }
+
+        .main-panel h2 {
+            margin-bottom: 16px;
+            font-size: 2rem;
+        }
+
+        .main-panel p {
+            color: #dbeafe;
+            line-height: 1.9;
+            max-width: 780px;
+            margin: auto;
+        }
+
+        .slots-title {
+            text-align: center;
+            margin: 65px 0 30px;
+        }
+
+        .slots-title h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .slots-title p {
+            color: #bfdbfe;
+        }
+
+        .slots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 18px;
+        }
+
+        .slot-card {
+            text-align: center;
+            padding: 28px 18px;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #123568, #0b2044);
+            border: 1px solid rgba(147,197,253,.2);
+            transition: .3s;
+        }
+
+        .slot-card:hover {
+            transform: translateY(-6px);
+            border-color: #38bdf8;
+        }
+
+        .slot-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .slot-card h3 {
+            margin-bottom: 9px;
+        }
+
+        .slot-card p {
+            color: #bfdbfe;
+            font-size: .9rem;
+        }
+
+        .services-title {
+            text-align: center;
+            margin: 65px 0 30px;
+        }
+
+        .services-title h2 {
+            margin-bottom: 12px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            padding: 25px;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #123568, #0b2044);
+            border: 1px solid rgba(147,197,253,.2);
+        }
+
+        .service-card .icon {
+            font-size: 2.3rem;
+            margin-bottom: 14px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #dbeafe;
+            line-height: 1.7;
+        }
+
+        .conditions {
+            margin-top: 55px;
+            padding: 32px;
+            border-radius: 20px;
+            background: rgba(56,189,248,.07);
+            border: 1px solid rgba(56,189,248,.25);
+        }
+
+        .conditions h2 {
+            margin-bottom: 18px;
+        }
+
+        .conditions ul {
+            padding-left: 22px;
+            color: #dbeafe;
+            line-height: 2;
+        }
+
+        .final-panel {
+            text-align: center;
+            margin-top: 55px;
+        }
+
+        .final-panel h2 {
+            color: #38bdf8;
+            margin-bottom: 14px;
+        }
+
+        .final-panel p {
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        .final-button {
+            display: inline-block;
+            margin-top: 23px;
+            padding: 14px 25px;
+            background: #38bdf8;
+            color: #06152f;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 12px;
+            transition: .3s;
+        }
+
+        .final-button:hover {
+            background: #7dd3fc;
+            transform: translateY(-3px);
+        }
+
+        @media(max-width:600px) {
+            .free-hero {
+                padding-top: 55px;
+            }
+
+            .main-panel,
+            .conditions {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Uziel<span>Code</span></a>
+
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="descripcion.html">Mi historia</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="free-hero">
+        <h1>Mis primeros <span>cinco proyectos</span></h1>
+
+        <p>
+            Todo creador necesita una primera oportunidad.
+            Por eso, quiero comenzar esta etapa de UzielCode
+            ofreciendo mis primeros cinco trabajos de forma gratuita,
+            para ganar experiencia y seguir desarrollando mis habilidades.
+        </p>
+    </section>
+
+    <section class="free-section">
+
+        <div class="main-panel">
+            <h2>🎁 Una oportunidad para comenzar</h2>
+
+            <p>
+                Esta iniciativa representa uno de mis primeros pasos
+                como creador digital. Quiero poner en práctica lo que
+                estoy aprendiendo, trabajar en nuevas ideas y conseguir
+                experiencia mediante proyectos pequeños y realistas.
+
+                <br><br>
+
+                Mi intención es que tanto quien presenta una idea
+                como yo podamos aprender de la experiencia.
+            </p>
+        </div>
+
+        <div class="slots-title">
+            <h2>Las cinco oportunidades</h2>
+            <p>Estas son las cinco plazas previstas para la iniciativa.</p>
+        </div>
+
+        <div class="slots-grid">
+
+            <article class="slot-card">
+                <div class="slot-number">01</div>
+                <h3>Primera plaza</h3>
+                <p>Disponible por confirmar</p>
+            </article>
+
+            <article class="slot-card">
+                <div class="slot-number">02</div>
+                <h3>Segunda plaza</h3>
+                <p>Disponible por confirmar</p>
+            </article>
+
+            <article class="slot-card">
+                <div class="slot-number">03</div>
+                <h3>Tercera plaza</h3>
+                <p>Disponible por confirmar</p>
+            </article>
+
+            <article class="slot-card">
+                <div class="slot-number">04</div>
+                <h3>Cuarta plaza</h3>
+                <p>Disponible por confirmar</p>
+            </article>
+
+            <article class="slot-card">
+                <div class="slot-number">05</div>
+                <h3>Quinta plaza</h3>
+                <p>Disponible por confirmar</p>
+            </article>
+
+        </div>
+
+        <div class="services-title">
+            <h2>¿Qué proyectos podrían participar?</h2>
+            <p>La iniciativa estará enfocada en trabajos pequeños.</p>
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <div class="icon">🌐</div>
+                <h3>Páginas web</h3>
+                <p>
+                    Páginas sencillas, portafolios básicos
+                    y pequeñas ideas para Internet.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="icon">🎨</div>
+                <h3>Diseño gráfico</h3>
+                <p>
+                    Miniaturas, imágenes y diseños
+                    para proyectos digitales.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="icon">🎬</div>
+                <h3>Edición de vídeos</h3>
+                <p>
+                    Ediciones sencillas para contenido
+                    audiovisual y proyectos personales.
+                </p>
+            </article>
+
+        </div>
+
+        <section class="conditions">
+            <h2>Condiciones de la iniciativa</h2>
+
+            <ul>
+                <li>La iniciativa contempla un máximo de cinco proyectos gratuitos.</li>
+                <li>Los trabajos deben ser pequeños y adecuados a mis conocimientos actuales.</li>
+                <li>La aceptación dependerá de mi disponibilidad y capacidad para realizar el trabajo.</li>
+                <li>El alcance y los detalles se definirán antes de comenzar.</li>
+                <li>No se incluyen gastos de terceros, servicios externos ni suscripciones.</li>
+                <li>Las solicitudes y los acuerdos se coordinarán con supervisión familiar.</li>
+                <li>Las plazas solo se marcarán como ocupadas cuando un proyecto haya sido aceptado.</li>
+            </ul>
+        </section>
+
+        <div class="final-panel">
+            <h2>¿Tienes una idea?</h2>
+
+            <p>
+                Si tienes un proyecto pequeño en mente,
+                puedes presentar tu propuesta para que sea revisada.
+            </p>
+
+            <a href="solicitar-proyecto.html" class="final-button">
+                Presentar una solicitud
+            </a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> UzielCode. Creando ideas, aprendiendo y creciendo.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios | UzielCode</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .prices-hero {
+            text-align: center;
+            padding: 85px 20px 45px;
+        }
+
+        .prices-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 18px;
+        }
+
+        .prices-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .prices-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        .prices-section {
+            max-width: 1150px;
+            margin: auto;
+            padding: 30px 25px 80px;
+        }
+
+        .prices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .price-card {
+            background: linear-gradient(145deg, #123568, #0b2044);
+            border: 1px solid rgba(147,197,253,.2);
+            border-radius: 20px;
+            padding: 28px;
+            transition: .3s;
+        }
+
+        .price-card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+        }
+
+        .price-icon {
+            font-size: 2.5rem;
+            margin-bottom: 18px;
+        }
+
+        .price-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 13px;
+        }
+
+        .price-card p {
+            color: #dbeafe;
+            line-height: 1.7;
+            font-size: .95rem;
+        }
+
+        .price-label {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 13px;
+            border-radius: 30px;
+            background: rgba(56,189,248,.13);
+            color: #7dd3fc;
+            font-size: .85rem;
+        }
+
+        .info-panel {
+            margin-top: 55px;
+            padding: 35px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #123568, #0b2044);
+            border: 1px solid rgba(56,189,248,.3);
+        }
+
+        .info-panel h2 {
+            margin-bottom: 18px;
+        }
+
+        .info-panel p {
+            color: #dbeafe;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .info-panel strong {
+            color: #38bdf8;
+        }
+
+        .free-panel {
+            margin-top: 25px;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(56,189,248,.08);
+            border: 1px solid rgba(56,189,248,.25);
+        }
+
+        .free-panel h2 {
+            margin-bottom: 15px;
+        }
+
+        .free-panel p {
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        .closing-text {
+            text-align: center;
+            margin-top: 55px;
+            color: #bfdbfe;
+            line-height: 1.8;
+        }
+
+        @media(max-width:600px) {
+            .prices-hero {
+                padding-top: 60px;
+            }
+
+            .info-panel,
+            .free-panel {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Uziel<span>Code</span></a>
+
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="descripcion.html">Mi historia</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="prices-hero">
+        <h1>Precios y <span>servicios</span></h1>
+
+        <p>
+            Cada proyecto tiene sus propias necesidades. En UzielCode
+            creemos que el valor de un trabajo depende del tiempo,
+            la dedicación y el esfuerzo que requiere hacerlo realidad.
+        </p>
+    </section>
+
+    <section class="prices-section">
+
+        <div class="prices-grid">
+
+            <article class="price-card">
+                <div class="price-icon">🌐</div>
+                <h3>Desarrollo web</h3>
+                <p>
+                    Creación de páginas web, portafolios y sitios
+                    personalizados según las características de cada idea.
+                </p>
+                <span class="price-label">Precio según proyecto</span>
+            </article>
+
+            <article class="price-card">
+                <div class="price-icon">🎨</div>
+                <h3>Diseño gráfico</h3>
+                <p>
+                    Diseño de miniaturas, imágenes y recursos visuales
+                    para diferentes proyectos y creadores.
+                </p>
+                <span class="price-label">Precio según diseño</span>
+            </article>
+
+            <article class="price-card">
+                <div class="price-icon">🎬</div>
+                <h3>Edición audiovisual</h3>
+                <p>
+                    Edición de vídeos con cortes, música, efectos,
+                    transiciones y otros elementos visuales.
+                </p>
+                <span class="price-label">Precio según edición</span>
+            </article>
+
+            <article class="price-card">
+                <div class="price-icon">💡</div>
+                <h3>Proyectos personalizados</h3>
+                <p>
+                    Ideas digitales que requieren una planificación
+                    especial y una solución adaptada a sus necesidades.
+                </p>
+                <span class="price-label">Evaluación previa</span>
+            </article>
+
+        </div>
+
+        <section class="info-panel">
+            <h2>¿Cómo se determina el precio?</h2>
+
+            <p>
+                <strong>1. Complejidad:</strong> no todos los proyectos
+                requieren el mismo nivel de trabajo.
+            </p>
+
+            <p>
+                <strong>2. Tiempo:</strong> se considera el tiempo
+                necesario para desarrollar y revisar el resultado.
+            </p>
+
+            <p>
+                <strong>3. Características:</strong> cada cliente puede
+                necesitar funciones, diseños o detalles diferentes.
+            </p>
+
+            <p>
+                <strong>4. Alcance:</strong> antes de aceptar un proyecto,
+                se define qué incluye y qué resultado se espera.
+            </p>
+        </section>
+
+        <section class="free-panel">
+            <h2>🎁 Primeras oportunidades</h2>
+
+            <p>
+                Como parte de mi crecimiento y aprendizaje, tengo la idea
+                de ofrecer gratuitamente mis primeros cinco trabajos,
+                siempre que sean proyectos pequeños y pueda realizarlos
+                con responsabilidad.
+            </p>
+
+            <p>
+                Esta iniciativa dependerá de mi disponibilidad y de la
+                coordinación con mi familia. No representa una oferta
+                permanente ni garantiza la aceptación de todos los proyectos.
+            </p>
+        </section>
+
+        <div class="closing-text">
+            <h2>Primero, calidad y aprendizaje.</h2>
+
+            <p>
+                Mi objetivo no es solamente establecer un precio,
+                sino aprender a crear trabajos bien organizados,
+                responsables y con dedicación.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> UzielCode. Creando ideas, aprendiendo y creciendo.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

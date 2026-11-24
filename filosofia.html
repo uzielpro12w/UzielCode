@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi filosofía | UzielCode</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .philosophy-hero {
+            text-align: center;
+            padding: 90px 20px 55px;
+        }
+
+        .philosophy-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 20px;
+        }
+
+        .philosophy-hero h1 span {
+            color: #38bdf8;
+        }
+
+        .philosophy-hero p {
+            max-width: 780px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.9;
+        }
+
+        .philosophy-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px 25px 80px;
+        }
+
+        .main-message {
+            padding: 42px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, #123568, #0b2044);
+            border: 1px solid rgba(56,189,248,.3);
+            text-align: center;
+        }
+
+        .main-message h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .main-message p {
+            max-width: 800px;
+            margin: auto;
+            color: #dbeafe;
+            line-height: 1.9;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 70px 0 35px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #bfdbfe;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .value-card {
+            background: linear-gradient(145deg, #123568, #0b2044);
+            border: 1px solid rgba(147,197,253,.2);
+            border-radius: 20px;
+            padding: 28px;
+            transition: .3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 17px;
+        }
+
+        .value-card h3 {
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .value-card p {
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        .belief-panel {
+            margin-top: 65px;
+            padding: 38px;
+            border-radius: 22px;
+            background: rgba(56,189,248,.07);
+            border: 1px solid rgba(56,189,248,.25);
+        }
+
+        .belief-panel h2 {
+            margin-bottom: 20px;
+        }
+
+        .belief-panel p {
+            color: #dbeafe;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+
+        .belief-panel strong {
+            color: #38bdf8;
+        }
+
+        .final-quote {
+            text-align: center;
+            margin-top: 65px;
+            padding: 30px 15px;
+        }
+
+        .final-quote h2 {
+            font-size: clamp(1.6rem, 4vw, 2.5rem);
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .final-quote p {
+            color: #dbeafe;
+            line-height: 1.8;
+        }
+
+        @media(max-width:600px) {
+            .philosophy-hero {
+                padding-top: 60px;
+            }
+
+            .main-message,
+            .belief-panel {
+                padding: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Uziel<span>Code</span></a>
+
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="descripcion.html">Mi historia</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="solicitar-proyecto.html" class="nav-button">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="philosophy-hero">
+        <h1>Mi <span>filosofía</span></h1>
+
+        <p>
+            UzielCode no es solamente un nombre o una página web.
+            Es una idea que representa mi deseo de aprender, crear,
+            experimentar y construir algo propio desde cero.
+        </p>
+    </section>
+
+    <section class="philosophy-section">
+
+        <div class="main-message">
+            <h2>Todo comienza con una idea.</h2>
+
+            <p>
+                Creo que no es necesario tenerlo todo resuelto para comenzar.
+                Muchas veces, los proyectos más importantes nacen de una
+                pequeña idea, de una pregunta o de las ganas de intentar
+                algo diferente.
+
+                <br><br>
+
+                Mi filosofía es avanzar paso a paso, aprender de cada
+                experiencia y no dejar que los errores se conviertan
+                en una razón para abandonar mis objetivos.
+            </p>
+        </div>
+
+        <div class="section-title">
+            <h2>Los valores de UzielCode</h2>
+            <p>Principios que quiero aplicar en cada proyecto.</p>
+        </div>
+
+        <div class="values-grid">
+
+            <article class="value-card">
+                <div class="value-icon">🚀</div>
+                <h3>Ambición</h3>
+                <p>
+                    Tener grandes objetivos y trabajar poco a poco
+                    para acercarme a ellos, sin olvidar de dónde comencé.
+                </p>
+            </article>
+
+            <article class="value-card">
+                <div class="value-icon">📚</div>
+                <h3>Aprendizaje</h3>
+                <p>
+                    Mantener la curiosidad, investigar y estar dispuesto
+                    a aprender cosas nuevas incluso cuando algo parece difícil.
+                </p>
+            </article>
+
+            <article class="value-card">
+                <div class="value-icon">💡</div>
+                <h3>Creatividad</h3>
+                <p>
+                    Buscar ideas diferentes, imaginar posibilidades
+                    y encontrar nuevas formas de resolver problemas.
+                </p>
+            </article>
+
+            <article class="value-card">
+                <div class="value-icon">🤝</div>
+                <h3>Responsabilidad</h3>
+                <p>
+                    Cumplir los compromisos que puedo asumir,
+                    comunicarme con claridad y respetar el trabajo de los demás.
+                </p>
+            </article>
+
+            <article class="value-card">
+                <div class="value-icon">🔥</div>
+                <h3>Perseverancia</h3>
+                <p>
+                    Entender que mejorar requiere tiempo, práctica,
+                    paciencia y constancia.
+                </p>
+            </article>
+
+            <article class="value-card">
+                <div class="value-icon">💙</div>
+                <h3>Humildad</h3>
+                <p>
+                    Reconocer que todavía tengo mucho por aprender
+                    y valorar cada pequeño avance.
+                </p>
+            </article>
+
+        </div>
+
+        <section class="belief-panel">
+            <h2>Lo que quiero demostrar</h2>
+
+            <p>
+                <strong>No necesito saberlo todo para comenzar.</strong>
+                Puedo aprender mientras desarrollo mis ideas y mejorar
+                con cada intento.
+            </p>
+
+            <p>
+                <strong>Los errores también forman parte del progreso.</strong>
+                No todos los experimentos salen bien, pero cada uno
+                puede enseñarme algo útil.
+            </p>
+
+            <p>
+                <strong>El futuro se construye con acciones.</strong>
+                Tener sueños es importante, pero también lo es dedicarles
+                tiempo, esfuerzo y organización.
+            </p>
+
+            <p>
+                <strong>Mi familia forma parte de mi motivación.</strong>
+                Quiero crecer, alcanzar mis objetivos y construir
+                oportunidades que también puedan beneficiar a las
+                personas que me apoyan.
+            </p>
+        </section>
+
+        <div class="final-quote">
+            <h2>«No se trata de empezar siendo el mejor, sino de no dejar de mejorar».</h2>
+
+            <p>
+                Esta es la mentalidad que quiero llevar conmigo
+                durante el crecimiento de UzielCode.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> UzielCode. Creando ideas, aprendiendo y creciendo.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
